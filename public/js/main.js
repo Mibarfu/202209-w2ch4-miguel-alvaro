@@ -1,3 +1,6 @@
 import SkylabArray from "./SkylabArray.js";
 
-let skyLab = new SkylabArray(1, 2, 4, 6, 5, 3);
+const skyLab = new SkylabArray(1, 3, 5, 7);
+
+const something = 5;
+console.log(skyLab.searchSomething(something));
