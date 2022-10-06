@@ -4,6 +4,7 @@ class SkylabArray {
 
   constructor(...values) {
     this.arraySkilab = values;
+    // this.length = this.size();
   }
 
   searchSomething(something) {
@@ -11,12 +12,14 @@ class SkylabArray {
     while (this.arraySkilab[indexLength] !== undefined) {
       indexLength += 1;
     }
+
     let indexFind = 0;
     for (indexFind; indexFind < indexLength; indexFind += 1) {
       if (this.arraySkilab[indexFind] === something) {
         return this.arraySkilab[indexFind];
       }
     }
+
     return false;
   }
 }
