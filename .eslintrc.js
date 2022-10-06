@@ -2,19 +2,17 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    jest: true
   },
-  extends: ["airbnb-base", "prettier"],
+  extends: [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    ["airbnb-base", "prettier"],
+  ],
   overrides: [],
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  rules: {
-    "lines-between-class-members": [
-      "error",
-      "always",
-      { exceptAfterSingleLine: true },
-    ],
-  },
+  plugins: ["react"],
+  rules: {},
 };
